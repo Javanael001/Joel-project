@@ -217,14 +217,6 @@ span{
   width: 350px;
   margin-top: 0px;
 }
-@media (max-width:700px) {
-  .container{
-    width: 100%;
-  }
-  .logo{
-    padding-top: 50px;
-  }
-}
 /* end of home */
 .footer{
   padding-left: 90px;
@@ -406,13 +398,17 @@ span{
   font-size: xx-large;
   font-weight: 50;
 }
+.serban>.submitte{
+  font-size: small;
+  font-weight: 0;
+}
 .serban{
-  margin-left: 70px;
+  margin-left: 100px;
 }
 .italic{
   font-style: italic;
   font-family: "Libre Baskerville", serif;
-  margin-left: 70px;
+  margin-left: 100px;
 }
 .btn3{
   background-color: gold;
@@ -420,7 +416,7 @@ span{
   width: 200px;
   height: 40px;
   border-radius: 60px;
-  margin-right: 300px;
+  margin-right: 350px;
 }
 .headersection{
   display: flex;
@@ -585,7 +581,7 @@ option{
   background-color: white;
   color: black;
   padding: 50px;
-  margin-right: 100px;
+  margin-right: 40px;
   display: flex;
 }
 .follow>a{
@@ -621,10 +617,153 @@ option{
 }
 .submitte{
   border: 2px solid black;
-  background-color: blue;
+  background-color: black;
   height: 30px;
   width: 300px;
   text-align: center;
-  color: white;
+  color: gold;
   margin-left: 1000px;
+  position: fixed;
+  top: 140px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo2 {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  a {
+    padding: 10px 15px;
+  }
+
+  .btn4 {
+    margin-left: 600px;
+  }
+
+  .master {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .picture1, .picture2, .picture3 {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .choosen {
+    flex-direction: column;
+  }
+
+  .why, .img {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .side2, .side3 {
+    margin: 20px 0 0 0;
+  }
+
+  .submitte {
+    margin-left: 700px;
+  }
+}
+
+/* Devices under 768px (Mobile phones) */
+@media (max-width: 768px) {
+  .btn4, .submitte {
+    display: none; /* Hide floating/fixed elements that can be disruptive on small screens */
+  }
+
+  .introduction {
+    margin: 20px;
+  }
+
+  .banner, .serbanner {
+    height: 300px;
+    background-size: cover;
+  }
+
+  .about {
+    padding-top: 100px;
+    height: 300px;
+  }
+
+  .regform, .boxp {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .personal, .online, .group {
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .personimg, .onlineimg, .groupimg {
+    width: 100%;
+  }
+
+  .personwrt, .onlinewrt, .groupwrt {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .v2f, .v2ff {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/* Devices under 480px (Small phones) */
+@media (max-width: 480px) {
+  .btn, .btn2, .btn3, .submit, .submit1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .miss, .vis {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .note {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  a {
+    padding-left: 0;
+    padding: 5px;
+  }
 }
